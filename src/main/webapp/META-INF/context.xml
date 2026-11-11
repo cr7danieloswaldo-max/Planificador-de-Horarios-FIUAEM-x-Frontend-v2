@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="">
+  <!-- El estado del asistente vive en memoria; no se persiste la sesión al reiniciar Tomcat. -->
+  <Manager pathname=""/>
+</Context>

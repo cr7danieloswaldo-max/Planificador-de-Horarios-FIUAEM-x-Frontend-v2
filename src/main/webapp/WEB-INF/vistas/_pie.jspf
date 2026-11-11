@@ -1,0 +1,6 @@
+<%@ page pageEncoding="UTF-8" %>
+<c:if test="${not empty aviso}"><p class="err"><c:out value="${aviso}"/></p></c:if>
+<p class="mu">Prototipo 1 · Wireframe con datos de ejemplo.</p>
+</main>
+</body>
+</html>

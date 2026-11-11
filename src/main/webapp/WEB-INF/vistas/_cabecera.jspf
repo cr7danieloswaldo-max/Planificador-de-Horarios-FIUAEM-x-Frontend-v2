@@ -1,0 +1,22 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+<%@ taglib prefix="ui" tagdir="/WEB-INF/tags" %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planificador de Horarios · UAEMéx</title>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilos.css">
+</head>
+<body>
+<header>
+  <div><b>Planificador de Horarios</b><small>UAEMéx · Facultad de Ingeniería · ICO</small></div>
+  <nav>
+    <c:forEach var="e" items="${barraPasos.etapas}">
+      <span class="pill ${e.activa ? 'on' : ''}">${e.numero} <c:out value="${e.etiqueta}"/></span>
+    </c:forEach>
+  </nav>
+</header>
+<main>
